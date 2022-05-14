@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="menu.js"></script>
+
+<head>
+  <link rel="stylesheet" href="main.css">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Aviogestioni Sportive - Corsi</title>
+</head>
+
+<body>
+  <!-- header -->
+  <div id="header">
+    <div style="margin: 10px; display: flex; flex-direction: row;">
+      <a href="index.html"><img src="images/logo.png" style="height: 80px;" /></a>
+      <div style="display: flex; flex-direction: column;">
+        <label class="titleHead">Aviogestioni Sportive ssd</label>
+        <label class="subtitleHead">Scuola di volo VDS n.367 VM</label>
+      </div>
+    </div>
+  
+    <ag-menu page="3"></ag-menu>
+  </div>
+
+  <div id="content">
+
+    <div style="display: flex; flex-direction: row; padding: 20px;">
+
+      <img src="images/aula.jpg" style="height: 300px;" />
+
+      <div style="padding: 0px 20px;">
+        I corsi per il conseguimento dell'attestato di pilota VDS, su aereo ed elicottero, si svolgono presso
+        l'Aviosuperficie tutti i giorni, per la parte teorica in aula e per la parte pratica su prenotazione con il
+        coordinatore della Scuola di Volo. Gli apparecchi utilizzati sono:
+        <br />
+        <span class="fw">EuroFly Fire Fox</span>, noto velivolo tubi e tela che grazie alle sue doti di semplicità
+        di volo sicurezza ha contribuito alla nascita del volo ultraleggero in Italia.
+        <br />
+        <br />
+        <span class="fw">Tecnam P92 Echo Super e P96 Golf</span>, ormai conosciutissimi sia per le caratteristiche
+        di semplicità di pilotaggio, affidabilità e sicurezza quanto per le ottime prestazioni in termini di
+        velocità di crociera e autonomia. Particolarità che hanno reso questa "famiglia" di velivoli i più noti
+        addestratori leggeri ed ultraleggeri.
+        <br />
+        <br />
+        Per l'Elicottero VDS Terrestre utilizziamo lo <span class="fw">YOYO serie I della AeroEliServizi.</span>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: row; padding: 20px;">
+      <div style="padding: 0px 10px;">
+        Per conseguire l'attestato VDS e necessario presentare:
+        <br />
+        <ul style="line-height: normal;">
+          <li>un documento valido;</li>
+          <li>la visita medica come prevista dal DPR 133/2010;</li>
+          <li>nulla osta della Autorità provinciale di pubblica sicurezza.</li>
+        </ul>
+
+        Per ottenere l'abilitazione al trasporto del passeggero, la qualifica di Avanzato, l'abilitazione al volo in
+        formazione e per i corsi di radiofonia aeronautica, i documenti necessari possono essere richiesti al
+        coordinatore della Scuola.
+      </div>
+
+      <img src="images/multi.jpg" style="height: 300px; margin: 5px;" />
+    </div>
+
+    <div style="display: flex; flex-direction: row; padding: 20px;">
+      <img src="images/p92.jpg" style="height: 400px; margin: 5px;" />
+    </div>
+
+  </div>
+
+  <div id="footer">
+    Aviogestioni Sportive s.r.l.
+    Società Sportiva Dilettantistica a Responsabilità Limitata<br />
+    Via Castronovo 11, 00058 - Santa Marinella (RM) - P.I. 09533251006
+  </div>
+
+</body>
+
+<script>
+  $(document).ready(function () {
+
+  });
+
+
+  $(window).on('hashchange', function () {
+    var page = window.location.hash;
+    console.log(page);
+    // $.get('pages/' + page + '.html', function (pageContent) {
+    //   $('.page-container').html(pageContent);
+    // })
+  });
+</script>
+
+</html>

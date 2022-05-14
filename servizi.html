@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="menu.js"></script>
+
+<head>
+  <link rel="stylesheet" href="main.css">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Aviogestioni Sportive - Servizi</title>
+</head>
+
+<body>
+  <!-- header -->
+  <div id="header">
+    <div style="margin: 10px; display: flex; flex-direction: row;">
+      <a href="index.html"><img src="images/logo.png" style="height: 80px;" /></a>
+      <div style="display: flex; flex-direction: column;">
+        <label class="titleHead">Aviogestioni Sportive ssd</label>
+        <label class="subtitleHead">Scuola di volo VDS n.367 VM</label>
+      </div>
+    </div>
+  
+    <ag-menu page="2"></ag-menu>
+  </div>
+
+  <div id="content">
+
+    <div style="display: flex; flex-direction: row; padding: 20px;">
+
+      <img src="images/max-pista-hangar.jpg" style="height: 300px; margin: 5px; object-fit: cover;" />
+
+      <div style="padding: 0px 10px;">
+        L'Aviosuperficie Gestita "Monti della Tolfa"-RM06-5, dispone di una pista in manto erboso, delle dimensioni di
+        650
+        mt x 18 mt non in pendenza e utilizzabile anche dopo forti piogge grazie alle ottime caratteristiche di
+        drenaggio.
+        <p style="font-style: italic; text-decoration: underline;">L'aviosuperficie è aperta tutti i giorni dalle ore
+          9:00 alle 18:00</p>
+        Per i velivoli che intendano raggiungerla da fuori è necessario il coordinamento e preventiva autorizzazione
+        inviando l'apposito modulo disponibile alla sezione <a href="indicazioni.html">indicazioni</a> ed inviarla
+        tramite
+        mail al gestore all'indirizzo
+        <a href="mailto:fcecilia@aviogestioni.it">fcecilia@aviogestioni.it</a> o tramite whatsapp al numero <a
+          href="tel:+393206792552">+39.320.6792552</a>
+      </div>
+
+    </div>
+
+    <div style="display: flex; flex-direction: row; padding: 20px;">
+      <div style="padding: 0px 10px;">
+        Presso la struttura sono disponibili i seguenti servizi:
+        <br />
+        <ul>
+          <li><span class="fw">Rimessaggio:</span> Hangar con struttura in ferro e copertura in PVC ad altissima
+            resistenza contro gli eventi
+            atmosferici. In ogni struttura è presente l'illuminazione,acqua ed energia elettrica fino a mezzora dopo il
+            tramonto. Gli hangar sono forniti di servizio di derattizzazione e polizza assicurativa.
+          </li>
+
+          <li><span class="fw">Osteria del Volo:</span> Un punto di ristoro per gli amici che vogliano raggiungere
+            l'Aviosuperficie in volo o via
+            terra
+            e gustare le prelibatezze servite dalla cucina in un ambiente amichevole, sereno e rilassante.
+          </li>
+
+          <li><span class="fw">La scuola di Volo:</span> Presso la quale si può conseguire l'attestato di pilota di
+            velivoli VDS per Aereo
+            (Multiassi),
+            Elicottero (Ala Rotante) e Autogiro oppure ottenere le abilitazioni e qualifiche varie, quali trasporto del
+            passeggero, qualifica di pilota VDS avanzato, volo in formazione, o semplicemente fare un volo di
+            ambientamento o
+            frequentare un corso di Sicurezza del Volo.
+          </li>
+
+          <li><span class="fw">I velivoli del club</span> sono a disposizione dei propri associati, tutti i giorni della
+            settimana, previa
+            autorizzazione del coordinatore.
+          </li>
+
+          <li><span class="fw">Ufficio e sala piloti:</span> Locale adibito in parte a sala piloti, con il simulatore di
+            volo, le cartine
+            aeronautiche
+            e tutto l'occorrente per la pianificazione dei voli e per le lezioni di teoria, ed un piccolo ufficio per il
+            direttivo.
+          </li>
+
+          <li><span class="fw">Sorveglianza:</span> Sul campo è presente il servizio di guardiania continuo e un sistema
+            di videosorveglianza con
+            registrazione automatica.
+          </li>
+
+        </ul>
+      </div>
+
+      <div style="display: flex; flex-direction: column">
+        <img src="images/hangar.jpg" style="height: 300px; margin: 5px;" />
+        <img src="images/castello.jpg" style="height: 300px; margin: 5px;" />
+        <img src="images/rist-out-r.jpg" style="height: 300px; margin: 5px;" />
+      </div>
+    </div>
+
+
+  </div>
+
+  <div id="footer">
+    Aviogestioni Sportive s.r.l.
+    Società Sportiva Dilettantistica a Responsabilità Limitata<br />
+    Via Castronovo 11, 00058 - Santa Marinella (RM) - P.I. 09533251006
+  </div>
+
+</body>
+
+<script>
+  $(document).ready(function () {
+
+  });
+
+
+  $(window).on('hashchange', function () {
+    var page = window.location.hash;
+    console.log(page);
+    // $.get('pages/' + page + '.html', function (pageContent) {
+    //   $('.page-container').html(pageContent);
+    // })
+  });
+</script>
+
+</html>

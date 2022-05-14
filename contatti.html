@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="menu.js"></script>
+
+<head>
+  <link rel="stylesheet" href="main.css">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Aviogestioni Sportive - Contatti</title>
+</head>
+
+<body>
+  <!-- header -->
+  <div id="header">
+    <div style="margin: 10px; display: flex; flex-direction: row;">
+      <a href="index.html"><img src="images/logo.png" style="height: 80px;" /></a>
+      <div style="display: flex; flex-direction: column;">
+        <label class="titleHead">Aviogestioni Sportive ssd</label>
+        <label class="subtitleHead">Scuola di volo VDS n.367 VM</label>
+      </div>
+    </div>
+  
+    <ag-menu page="5"></ag-menu>
+  </div>
+
+  <div id="content">
+    <div style="display: flex; flex-direction: row; padding: 20px; font-size: 18px; line-height: 26px;">
+
+      <div style="width: 55%; padding: 0px 10px; text-align: center; margin: auto;">
+
+        L'ufficio e' aperto tutti i giorni dalle ore 9:30 al tramonto.
+        <br />
+        <br />
+        Per le informazioni riguardanti i voli, l'apertura dell'aviosuperficie e<br />la Scuola di Volo è inoltre
+        possibile
+        scrivere a:
+        <br />
+        <br />
+        <b>Gen. Gianni CECILIA</b><br />
+        <a href="tel:+393297072515">+39.329.7072515</a>
+        <br />
+        <a href="mailto: gcecilia@libero.it">gcecilia@libero.it</a>
+        <br />
+
+        <br />
+
+        <b>Francesco Maria CECILIA</b><br />
+        <a href="tel:+393206792552">+39.320.6792552</a>
+        <br />
+        <a href="mailto:fcecilia@aviogestioni.it">fcecilia@aviogestioni.it</a>
+        <br />
+        <br />
+        fax: <a href="tel:+390766537127">+39.0766.537127</a>
+      </div>
+    </div>
+
+    <br/>
+    <br/>
+  </div>
+
+  <div id="footer">
+    Aviogestioni Sportive s.r.l.
+    Società Sportiva Dilettantistica a Responsabilità Limitata<br />
+    Via Castronovo 11, 00058 - Santa Marinella (RM) - P.I. 09533251006
+  </div>
+
+  <div id="zoomImage"
+    style="cursor: zoom-out; height: 90%; position: fixed; top:5%; left: calc(50% - 450px); border: 1px double lightgrey; display:none;"
+    onclick="zoomOut()">
+    <img id="circuito" title="Circuito" src="images/circuito.png" style="width: 100%;">
+  </div>
+
+</body>
+
+<script>
+  $(document).ready(function () {
+
+  });
+
+
+  $(window).on('hashchange', function () {
+    var page = window.location.hash;
+    // $.get('pages/' + page + '.html', function (pageContent) {
+    //   $('.page-container').html(pageContent);
+    // })
+  });
+
+  function zoomIn() {
+    // document.getElementById("zoomImage").style.left=window.innerWidth/2;
+    document.getElementById("zoomImage").style.display = "block";
+  }
+  function zoomOut() {
+    document.getElementById("zoomImage").style.display = "none";
+  }  
+</script>
+
+</html>

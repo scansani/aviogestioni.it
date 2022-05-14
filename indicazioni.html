@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="menu.js"></script>
+
+<head>
+  <link rel="stylesheet" href="main.css">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Aviogestioni Sportive - Indicazioni</title>
+</head>
+
+<body>
+  <!-- header -->
+  <div id="header">
+    <div style="margin: 10px; display: flex; flex-direction: row;">
+      <a href="index.html"><img src="images/logo.png" style="height: 80px;" /></a>
+      <div style="display: flex; flex-direction: column;">
+        <label class="titleHead">Aviogestioni Sportive ssd</label>
+        <label class="subtitleHead">Scuola di volo VDS n.367 VM</label>
+      </div>
+    </div>
+
+    <ag-menu page="4"></ag-menu>
+  </div>
+
+  <div id="content">
+    <div style="display: flex; flex-direction: row; padding: 20px; font-size: 18px; line-height: 26px;">
+
+      <div style="width: 55%; padding: 0px 10px; text-align: center; margin: auto;">
+        <span class="fw">Per raggiungere l'aviosuperficie in volo:</span>
+        <br />
+        Coordinate <a href="https://goo.gl/maps/ucdcbktxzip9ECbk7" target="map">42° 01' 04'' N 11° 59' 07'' E</a>
+        <br />
+        QFU 12/30 Circuito sinistro per pista 12, destro per 30
+        <br />
+        elevazione campo 40 ft msl- circuito 700ft
+
+        <br />
+        <br />
+        <span class="fw">Precauzioni</span>
+        <br />
+        <b>Il direttivo della "Aviogestioni Sportive ssd"<br />
+          è particolarmente sensibile ed impegnato nel non arrecare<br />
+          <u>alcun disturbo al vicino abitato di Santa Severa Nord.</u>
+        </b>
+        <br />
+        <br />
+
+        Evitare quindi il sorvolo dell'abitato a Nord-Ovest del campo
+        seguendo il circuito indicato di seguito e nel finale per pista 12, porre attenzione alla presenza di una linea
+        elettrica a circa 400 mt dalla testata pista 12.
+
+        <div style="cursor: zoom-in;" onclick="zoomIn()">
+          <img title="Circuito" src="images/circuito.png" height="310" style="margin: 10px;">
+        </div>
+
+        <div>
+          Prestare inoltre attenzione al divieto di sorvolo della R.N.R. di Macchiatonda e delle zone
+          R14 A e B nonch&egrave; la P128 poste a Sud Est della struttura.
+        </div>
+        <br />
+        <div>
+          <i>Nei periodi in cui si renda necessario, porre attenzione ad eventuali strutture di irrigazione poste sulle
+            vie di rullaggio.
+          </i>
+        </div>
+        <br />
+
+        <div>
+          <u>Per raggiungerci via terra:</u>
+          <br />
+          Autostrada A12 Uscita Santa Severa- Santa Marinella,
+          <br />
+          prendere la SS1 Aurelia in direzione Roma&nbsp;
+          <br />
+          uscita Santa Severa Nord e seguire la segnaletica.
+          <br />
+          <br />
+          Scaricare <a href="utilizzo_aviosuperficie.pdf" target="modulo"><b>il modulo di richiesta
+              utilizzo</b></a>
+          ed inviarlo via mail all'aviosuperficie.
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="footer">
+    Aviogestioni Sportive s.r.l.
+    Società Sportiva Dilettantistica a Responsabilità Limitata<br />
+    Via Castronovo 11, 00058 - Santa Marinella (RM) - P.I. 09533251006
+  </div>
+
+  <div id="zoomImage"
+    style="cursor: zoom-out; height: 90%; position: fixed; top:5%; left: calc(50% - 450px); border: 1px double lightgrey; display:none;"
+    onclick="zoomOut()">
+    <img id="circuito" title="Circuito" src="images/circuito.png" style="width: 100%;">
+  </div>
+
+</body>
+
+<script>
+  $(document).ready(function () {
+
+  });
+
+
+  $(window).on('hashchange', function () {
+    var page = window.location.hash;
+    // $.get('pages/' + page + '.html', function (pageContent) {
+    //   $('.page-container').html(pageContent);
+    // })
+  });
+
+  function zoomIn() {
+    // document.getElementById("zoomImage").style.left=window.innerWidth/2;
+    document.getElementById("zoomImage").style.display = "block";
+  }
+  function zoomOut() {
+    document.getElementById("zoomImage").style.display = "none";
+  }  
+</script>
+
+</html>

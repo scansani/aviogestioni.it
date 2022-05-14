@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="menu.js"></script>
+
+<head>
+  <link rel="stylesheet" href="main.css">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Aviogestioni Sportive - Home</title>
+</head>
+
+<body>
+  
+  <!-- header -->
+  <div style="margin: 10px; display: flex; flex-direction: row;">
+    <a href="index.html"><img src="images/logo.png" style="height: 80px;" /></a>
+    <div style="display: flex; flex-direction: column;">
+      <label class="titleHead">Aviogestioni Sportive ssd</label>
+      <label class="subtitleHead">Scuola di volo VDS n.367 VM</label>
+    </div>
+  </div>
+
+  <!-- Barra menu -->
+  <ag-menu page="0"/>
+
+  <!-- <div style="display: flex; justify-content: space-around; margin: 30px;"> -->
+  <div id="bodyDiv">
+    <!-- <img src="images/multi.jpg" style="width: 100%; height: max-content;" /> -->
+    <div style="padding: 20px 100px;  float: right;font-size: 20px;color: darkblue;">
+      <span></span>Benvenuti nel sito di Aviogestioni Sportive ssd</span>
+      <p />
+      <span style="font-family: Verdana;">"Aviosuperficie Monti della Tolfa RM06-5"</span>
+      <p />
+      <div style="width: 500px; text-align: justify;">Abbiamo pubblicato questo sito per comunicare con tutti gli amici,
+        con coloro che amano il volo e con quelli che non si sono ancora avvicinati a questa splendida e stupenda realtà
+        !</div>
+    </div>
+  </div>
+
+  <div id="footer" style="position: fixed;">
+    Aviogestioni Sportive s.r.l.
+    Società Sportiva Dilettantistica a Responsabilità Limitata<br />
+    Via Castronovo 11, 00058 - Santa Marinella (RM) - P.I. 09533251006
+  </div>
+</body>
+
+<script>
+  $(document).ready(function () {
+    resizePhoto();
+  });
+
+  $(window).resize(function () {
+    resizePhoto();
+  });
+
+  function resizePhoto() {
+    let bd = document.getElementById("bodyDiv");
+    let f = document.getElementById("footer");
+    bd.style.height = (f.offsetTop - bd.offsetTop) + "px";
+  }
+</script>
+
+</html>
